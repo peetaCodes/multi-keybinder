@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "multi-keybinder",
+	"version": "${version}",
+	"name": "Multi-KeyBinder",
+	"description": "This is (hopefully!) a mod that lets you bind keys combinations to a single action",
+	"authors": [
+		"Me! (Pietro Mario Bellizio)"
+	],
+	"contact": {
+		"homepage": "https://peeta.net/",
+		"sources": "https://github.com/Peeta/Multi-KeyBinder/"
+	},
+	"license": "MIT",
+	"icon": "assets/multi-keybinder/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.peeta.example.MultiKeyBinder"
+		],
+		"fabric-datagen": [
+			"com.peeta.example.MultiKeyBinderDataGenerator"
+		],
+		"client": [
+			"com.peeta.example.MultiKeyBinderClient"
+		]
+	},
+	"mixins": [
+		"multi-keybinder.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
