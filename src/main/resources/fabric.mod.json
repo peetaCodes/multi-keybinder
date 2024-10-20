@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.peeta.example.MultiKeyBinder"
+			"com.peetaCodes.example.MultiKeyBinder"
 		],
 		"fabric-datagen": [
 			"com.peeta.example.MultiKeyBinderDataGenerator"
